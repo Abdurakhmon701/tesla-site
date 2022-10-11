@@ -19,5 +19,7 @@ from first_site import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.HomePageView.as_view()),
-    path('',views.DetailPageView.as_view()),
+    path('detail/',views.DetailPageView.as_view(),name="detail"),
+    path('detail2/',views.DetailPageView2.as_view(),name="detail2"),
+    path('detail3/',views.DetailPageView3.as_view(),name="detail3"),
 ]
